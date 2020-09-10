@@ -17,6 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  */
 
  
+ 
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('API');
 $routes->setDefaultMethod('index');
