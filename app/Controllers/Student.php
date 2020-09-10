@@ -13,6 +13,10 @@ class Student extends Controller
         $data = $model->orderBy('id', 'DESC')->findAll();
         
         // return view('list', $data);
+
+
+
+        
         echo json_encode($data);
     }    
  
