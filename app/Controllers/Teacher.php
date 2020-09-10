@@ -44,7 +44,7 @@ class Student extends Controller
     public function edit($id = null)
     {
       
-     $model = new StudentModel();
+     $model = new TeacherModel();
  
      $data['teacher'] = $model->where('id', $id)->first();
  
@@ -56,7 +56,7 @@ class Student extends Controller
  
 		helper(['form', 'url']);
 		 
-		$model = new StudentModel();
+		$model = new TeacherModel();
 
 		$id = $this->request->getVar('id');
 
@@ -72,7 +72,7 @@ class Student extends Controller
     }
  
     public function delete($id = null){
-		$model = new StudentModel();
+		$model = new TeacherModel();
 		$data['user'] = $model->where('id', $id)->delete();
 		return redirect()->to( base_url('teacher') );
     }
