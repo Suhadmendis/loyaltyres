@@ -3,7 +3,7 @@
 use CodeIgniter\Controller;
 use App\Models\TeacherModel;
  
-class Student extends Controller
+class Teacher extends Controller
 {
  
     public function index()
