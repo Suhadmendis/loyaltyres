@@ -4,8 +4,8 @@ use CodeIgniter\Model;
  
 class PointModel extends Model
 {
-    protected $table = 'ponit';
+    protected $table = 'point';
  
-    protected $allowedFields = ['ponits','user_ref'];
+    protected $allowedFields = ['points','user_ref'];
 }
 ?>
