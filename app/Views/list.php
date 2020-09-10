@@ -7,6 +7,11 @@
 </head>
 <body>
 
+<?php
+print_r($students_detail);
+?>
+
+
 <table border="1" align="center">
     <tr>
         <td colspan="5" align="right"><a href="<?php echo site_url('student/create') ?>">Add</a></td>

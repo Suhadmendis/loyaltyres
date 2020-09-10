@@ -10,9 +10,10 @@ class Student extends Controller
     {    
         $model = new StudentModel();
  
-        $data['students_detail'] = $model->orderBy('id', 'DESC')->findAll();
+        $data = $model->orderBy('id', 'DESC')->findAll();
         
-        return view('list', $data);
+        // return view('list', $data);
+        echo json_encode($data);
     }    
  
     public function create()
